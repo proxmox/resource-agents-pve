@@ -1,3 +1,11 @@
+resource-agents-pve (3.9.2-2) unstable; urgency=low
+
+  * add various depends (copied from old rgmanager package)
+
+  * run ccs_update_schema in postinst
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 09 Dec 2011 11:11:00 +0100
+
 resource-agents-pve (3.9.2-1) unstable; urgency=low
 
   * Initial release for pve2

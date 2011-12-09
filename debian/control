@@ -7,6 +7,6 @@ Standards-Version: 3.8.4
 
 Package: resource-agents-pve
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, redhat-cluster-pve, iproute, iputils-arping, iputils-ping, nfs-common, perl, gawk, net-tools
 Description: resource agents for redhat cluster suite
  This package provides various resource agents.
