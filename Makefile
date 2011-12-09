@@ -6,7 +6,6 @@ RAVER=3.9.2
 RADIR=resource-agents-${RAVER}
 RASRC=${RADIR}.tar.bz2
 
-
 DEB=${PACKAGE}_${RAVER}-${PKGREL}_amd64.deb
 
 all: ${DEB}
