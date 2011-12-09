@@ -1,0 +1,5 @@
+resource-agents-pve (3.9.2-1) unstable; urgency=low
+
+  * Initial release for pve2
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 09 Dec 2011 07:48:21 +0100

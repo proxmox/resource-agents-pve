@@ -1,0 +1,12 @@
+Source: resource-agents-pve
+Section: admin
+Priority: optional
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev
+Standards-Version: 3.8.4
+
+Package: resource-agents-pve
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: resource agents for redhat cluster suite
+ This package provides various resource agents.
