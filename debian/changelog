@@ -1,3 +1,9 @@
+resource-agents-pve (3.9.2-3) unstable; urgency=low
+
+  * remove drbd agents (those are in drbd8-utils)
+
+ -- Proxmox Support Team <support@proxmox.com>  Mon, 09 Jan 2012 10:55:22 +0100
+
 resource-agents-pve (3.9.2-2) unstable; urgency=low
 
   * add various depends (copied from old rgmanager package)

@@ -9,6 +9,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+BUILDROOT := $(shell pwd)
+RADIR=$(BUILDROOT)/debian/resource-agents-pve/usr/share/cluster
+
 %:
 	dh $@ 
 
@@ -18,3 +21,9 @@ override_dh_auto_configure:
 		--localstatedir=/var 				\
 		--with-ras-set=rgmanager			\
 		--sysconfdir=/etc
+
+override_dh_auto_install:
+	$(MAKE) install DESTDIR=$(BUILDROOT)/debian/resource-agents-pve
+	# drbd files are in package drbd8-utils
+	rm $(RADIR)/drbd.metadata
+	rm $(RADIR)/drbd.sh
