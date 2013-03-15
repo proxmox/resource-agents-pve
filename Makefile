@@ -1,4 +1,4 @@
-RELEASE=2.0
+RELEASE=3.0
 
 PACKAGE=resource-agents-pve
 PKGREL=3
@@ -16,7 +16,7 @@ ${DEB} deb: ${RASRC}
 	cp -av debian ${RADIR}/debian
 	cat ${RADIR}/AUTHORS >>${RADIR}/debian/copyright
 	cd ${RADIR}; dpkg-buildpackage -rfakeroot -b -us -uc
-	lintian ${DEB}
+	lintian -X copyright-file ${DEB}
 
 .PHONY: upload
 upload: ${DEB}
