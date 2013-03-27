@@ -1,7 +1,7 @@
 RELEASE=3.0
 
 PACKAGE=resource-agents-pve
-PKGREL=3
+PKGREL=4
 RAVER=3.9.2
 RADIR=resource-agents-${RAVER}
 RASRC=${RADIR}.tar.bz2

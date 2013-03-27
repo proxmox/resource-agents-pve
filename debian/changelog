@@ -1,3 +1,9 @@
+resource-agents-pve (3.9.2-4) unstable; urgency=low
+
+  * increase version for wheezy
+
+ -- Proxmox Support Team <support@proxmox.com>  Wed, 27 Mar 2013 10:39:25 +0100
+
 resource-agents-pve (3.9.2-3) unstable; urgency=low
 
   * remove drbd agents (those are in drbd8-utils)
